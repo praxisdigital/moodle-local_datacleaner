@@ -117,8 +117,12 @@ class cleaner extends base {
         include($this->full_path('settings.php')); // This may also set $settings to null.
 
         if ($settings) {
+            $default_setting = 0;
+            if ($this->name === 'core' || $this->name === 'users') {
+                $default_setting = 1;
+            }
             $settings->add(new \admin_setting_configcheckbox('cleaner_' . $this->name . '/enabled',
-                new \lang_string('enabledisable', 'local_datacleaner'), null, 0));
+                new \lang_string('enabledisable', 'local_datacleaner'), null, $default_setting));
 
             $ADMIN->add($parentnodename, $settings);
         }

@@ -181,3 +181,7 @@ Run the cli script with --help for more options:
 sudo -u apache /usr/bin/php /<your_moodle_directory>/local/datacleaner/cli/clean.php --help
 ```
 
+### Release notes
+
+* **2.3.10**
+    * Changed core + users default to be enabled.
