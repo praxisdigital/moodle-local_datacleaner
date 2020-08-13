@@ -183,5 +183,7 @@ sudo -u apache /usr/bin/php /<your_moodle_directory>/local/datacleaner/cli/clean
 
 ### Release notes
 
+* **2.3.11**
+    - Changes to db/subplugin updated from forked origin via sync.
 * **2.3.10**
-    * Changed core + users default to be enabled.
+    - Changed core + users default to be enabled.
